@@ -7,7 +7,7 @@ const userRouter = require("./routes/userRoutes")
 const messageRouter = require("./routes/messageRoutes")
 const Messages = require("./models/messages")
 
-const PORT = 8080
+const PORT = process.env || 8080
 const dataBaseURL = `mongodb+srv://akshat21:aku1985pika@cluster0.ew0oz.mongodb.net/?retryWrites=true&w=majority`
 
 const app = express()
